@@ -58,7 +58,9 @@ x_train , x_test , y_train , y_test = train_test_split(X_original , y_original ,
 lin_reg = LinearRegression()
 lin_reg.fit( x_train , y_train )
 
+predicted_price = lin_reg.predict( pd.DataFrame( [[2000 , 3]] , columns = ['size', 'bedrooms']))
 
+print(f"predicted price for house's size equals 2000 M and 3 bedrooms = {predicted_price[0][0]: .2f}k")
 print(f"Train R* = {r2_score( y_train , lin_reg.predict(x_train)): .4f}")
 print(f"test R* = {r2_score( y_test , lin_reg.predict(x_test)): .4f}")
 

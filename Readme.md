@@ -1,11 +1,11 @@
-# Multiple variable Linear Regression -- from scratch & Sklearn
-this project implements linear regression based on two variable ( size , bedrooms )
-to predict output ( price )
+# Multiple variable Linear Regression --# Sklearn
+this project implements a multiple linear regression model using sklearn to predict house prices
+based on two variable house size and number of bedrooms
 
 ## Features
 - Data preprocessing and displays the data
 - splits the datasets to training and testing set by sklearn
-- trains a multiple linear regression model bt sklearn `lin_reg.fit( x_train , y_train )`
+- trains a multiple linear regression model using sklearn `lin_reg.fit( x_train , y_train )`
 - predicts house's price based on its size and number of bedrooms
 - Evaluates the model using R^2 score
 - Visualization the regression results
@@ -38,13 +38,13 @@ The model trains on a three-column dataset (`mul_var_lin_reg.csv`):
 - visualizes a graph for predicted price vs Size of house with bedrooms equals three
 
 ## Results
-- predicted price for house's size equals 2000 M and 3 bedrooms =  330662.99k
+- predicted price for house's size equals 2000 M and 3 bedrooms =  330662.99
 - Train R* =  0.7691
 - test R* =  0.5149
 
 
 ## Visualization
-this figure below shows the fitted line regression on the traning set
+this figure below shows the line regression fitted to the test data while fixing number of bedrooms
 
 ![Visualization](images/figure3.png)
 
@@ -56,7 +56,7 @@ Run the project using:
 ```bash
 python mul_reg_file.py
 ```
-####the program will:
+#### the program will:
 - load the dataset
 - displays the data
 - splits the data to train and test set
@@ -64,7 +64,7 @@ python mul_reg_file.py
 - Evaluate the model by R^2 score
 - visualizes a graph to linear regression line with train data
 
-## Library used:
+## Libraries used:
 - Numpy
 - pandas
 - matplotlib
@@ -72,4 +72,4 @@ python mul_reg_file.py
 - os
 
 ## Note
-the project is for educational purposes only
+This project is for educational purposes only
